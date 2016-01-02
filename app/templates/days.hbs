@@ -1,0 +1,12 @@
+<h3 class="page-title">Add a day</h3>
+<form>
+  <label for="day">Add a day</label>
+  {{input
+    value=date
+    type="hidden"
+  }}
+
+  <button {{action 'addGem'}}>Submit</button>
+</form>
+
+{{outlet}}

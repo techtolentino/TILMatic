@@ -6,6 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('days', function() {
+    this.route('gems', function() {
+      this.route('new');
+    });
+  });
 });
 
 export default Router;

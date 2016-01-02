@@ -1,0 +1,10 @@
+<form>
+  <label for="gem">What did you learn?</label>
+  {{input
+    value=gem
+    type="text"
+  }}
+
+  <button {{action 'addGem'}}>Submit</button>
+</form>
+{{outlet}}
